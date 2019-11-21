@@ -26,9 +26,15 @@ class CashRegister
   
   def void_last_transaction
     last_item = @items.pop
+<<<<<<< HEAD
     last_item_total_price = last_item.last
     @total -= last_item_total_price
     @items.delete_if {|item| item.first == last_item.first}
+=======
+    price = last_item.last
+    @total -= price
+    
+>>>>>>> 5ca8ff90176bd4c684dc10312fbea576c3176381
   end
   
 end
